@@ -100,9 +100,26 @@ section h3 {
   justify-content: space-between;
 }
 
-/* Remove the bullet point pseudo-element */
-.participants-section ul li::before {
-  display: none;
+
+/* Toolbar styles */
+#activities-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#activities-toolbar input[type="text"],
+#activities-toolbar select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#activities-toolbar select {
+  min-width: 140px;
 }
 
 .participant-email {
